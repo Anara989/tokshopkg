@@ -970,8 +970,8 @@
                 total += item.price * item.qty;
             }
             text += currentLang === 'ru' 
-                ? `\n💰 *Итого:* ${total} сом\n\nПодскажите по наличию и доставке.`
-                : `\n💰 *Жалпы:* ${total} сом\n\nБар-жогун жана жеткирүү шарттарын айтып коёсузбу.`;
+                ? `\n*Итого:* ${total} сом\n\nПодскажите по наличию и доставке.`
+                : `\n*Жалпы:* ${total} сом\n\nБар-жогун жана жеткирүү шарттарын айтып коёсузбу.`;
 
             if (method === 'whatsapp') {
                 window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(text)}`, '_blank');
